@@ -1,0 +1,14 @@
+.Header {
+    padding: 15px;
+}
+
+.Header h1 {
+    font-size: 2rem;
+    margin: 5px 0;
+}
+
+.Header h2 {
+    font-size: 1rem;
+    font-weight: lighter;
+    margin: 5px 0;
+}
