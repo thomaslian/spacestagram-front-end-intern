@@ -3,14 +3,12 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
 }
-
 
 @media screen and (max-width: 900px) {
     .CardContainer {
         flex-direction: column;
-        justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
     }
