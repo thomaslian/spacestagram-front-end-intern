@@ -37,8 +37,15 @@
     padding: 15px;
 }
 
+.Card .cardTextHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .Card h3 {
     font-weight: 500;
     font-size: 1.5rem;
-    margin-top: 15px;
+    margin: 10px 0;
 }

@@ -23,7 +23,10 @@ export default function Card(props: CardConfig): ReactElement {
                     />
                 </div> : null}
             <div className="CardText">
-                <h3>{props.title}</h3>
+                <div className="cardTextHeader">
+                    <h3>{props.title}</h3>
+                    <p>Date taken: <time>{props.date}</time></p>
+                </div>
                 <p>{props.description}</p>
             </div>
             <div className="TakeSpace"></div>
