@@ -12,3 +12,9 @@
     font-weight: lighter;
     margin: 5px 0;
 }
+
+@media screen and (min-width: 900px) {
+    .Header h1, .Header h2 {
+        text-align: center;
+    }
+}

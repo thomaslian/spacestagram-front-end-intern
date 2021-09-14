@@ -3,6 +3,6 @@ export default interface CardConfig {
     date: string,
     title: string,
     description: string,
-    color?: string,
+    borderColor?: string,
     textColor?: string
 }

@@ -1,15 +1,7 @@
 .CardContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: flex-start;
-}
-
-@media screen and (max-width: 900px) {
-    .CardContainer {
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-    }
+    align-items: center;
 }
