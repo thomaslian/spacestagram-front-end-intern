@@ -2,6 +2,8 @@
 
 NASA API key located in .env file as "REACT_APP_NASA_API_KEY". API key can be generated at https://api.nasa.gov/.
 
+See the project at: https://spacestagram-internship.herokuapp.com/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
