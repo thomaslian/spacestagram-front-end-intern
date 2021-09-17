@@ -1,0 +1,56 @@
+/* Star animation inspiration: https://codepen.io/Iris1003/pen/NRxYqw*/
+
+.Star {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+}
+
+.Star .star-icon {
+    font-size: 44px;
+    cursor: pointer;
+    color: darkslategray;
+}
+
+.Star .star-icon:active {
+    color: black;
+}
+
+.starred .star-icon {
+    animation: spin .6s forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transition-timing-function: ease-in-out;
+    color: #AF8008;
+}
+
+.unstarred .star-icon {
+    animation: unspin .3s forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transition-timing-function: ease-in-out;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    33% {
+        transform: rotate(175deg);
+    }
+    66% {
+        transform: rotate(120deg);
+    }
+    100% {
+        transform: rotate(144deg);
+    }
+}
+
+@keyframes unspin {
+    0% {
+        transform: rotate(142deg);
+    }
+    100% {
+        transform: rotate(72deg);
+    }
+}
