@@ -16,9 +16,8 @@ export default class Star extends React.Component<Props, State> {
     }
 
     handleClick(event: any): void {
-        console.log(event);
         // Keypresses other then Enter and Space should not trigger a command
-        if (event.nativeEvent.pointerType !== "mouse" && event.key !== 'Enter' && event.key !== ' ') {
+        if ((event.nativeEvent.pointerType !== "mouse" && event.nativeEvent.pointerType !== "touch") && event.key !== 'Enter' && event.key !== ' ') {
             return;
         }
 
