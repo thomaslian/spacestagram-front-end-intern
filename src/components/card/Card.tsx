@@ -8,22 +8,24 @@ export default function Card(props: CardConfig): ReactElement {
 
     let imageContent;
 
-    if (props.imageUrl.includes("youtube")) {
-        imageContent = (
-            <div className="youtube-responsive">
-                <iframe
-                    width="853"
-                    height="480"
-                    src={props.imageUrl}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    title="Youtube video"
-                />
-            </div>
-        )
-    } else if (props.imageUrl) {
-        imageContent = <img src={props.imageUrl} alt={props.title}></img>
+    if (props.imageUrl) {
+        if (props.imageUrl.includes("youtube")) {
+            imageContent = (
+                <div className="youtube-responsive">
+                    <iframe
+                        width="853"
+                        height="480"
+                        src={props.imageUrl}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        title="Youtube video"
+                    />
+                </div>
+            )
+        } else if (props.imageUrl) {
+            imageContent = <img src={props.imageUrl} alt={props.title}></img>
+        }
     }
 
     return (
